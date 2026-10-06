@@ -74,6 +74,78 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  width: 100%;
+  max-width: none;
+  margin-top: 14px;
+  padding: 14px 16px;
+  background-color: #eef2ff;
+  border: 1px solid #c5cae9;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 16px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+  padding: 4px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  color: #c62828;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.participant-remove-button:hover:not(:disabled) {
+  color: #b71c1c;
+  background-color: #ffebee;
+  border-color: #ef9a9a;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-remove-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participant-remove-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
